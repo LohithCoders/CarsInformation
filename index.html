@@ -4,65 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Info Hub</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         /* General Styling */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: #f5f5f5;  /* Soft light background */
+            color: #333;  /* Dark text for readability */
         }
 
+        /* Header Styling */
         header {
-            background-color: #1f2937;
+            background-color: #1a202c;  /* Darker blue-gray for header */
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin: 0;
         }
 
         header p {
             margin: 5px 0 0;
-            font-size: 1rem;
-            color: #a5a5a5;
+            font-size: 1.2rem;
+            color: #cbd5e0;  /* Light gray for subtitle */
         }
 
+        /* Navigation Styling */
         nav {
             display: flex;
             justify-content: center;
-            background-color: #374151;
-            padding: 10px;
+            background-color: #2D3748;  /* Dark gray for navbar */
+            padding: 12px;
         }
 
         nav a {
             text-decoration: none;
-            color: white;
-            margin: 0 15px;
-            font-size: 1rem;
+            color: #f1f5f9;  /* Light gray text for links */
+            margin: 0 20px;
+            font-size: 1.2rem;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #3b82f6;
+            color: #3b82f6;  /* Soft blue on hover for links */
         }
 
+        /* Main Container */
         .main-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 30px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
         }
 
+        /* Card Styling */
         .card {
             background-color: white;
             border-radius: 10px;
@@ -78,44 +83,47 @@
 
         .card img {
             width: 100%;
-            height: 180px;
+            height: 200px;
             object-fit: cover;
         }
 
         .card-content {
-            padding: 15px;
+            padding: 20px;
             text-align: center;
         }
 
         .card-content h3 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin: 10px 0;
-            color: #1f2937;
+            color: #2D3748;  /* Dark gray for card headings */
         }
 
+        /* Explore Vehicle Links - Darker Color */
         .card-content a {
             text-decoration: none;
-            color: #3b82f6;
+            color: #2D3748;  /* Darker gray for Explore links */
             font-weight: bold;
             display: inline-block;
-            margin-top: 5px;
-            transition: color 0.3s;
+            margin-top: 8px;
+            transition: color 0.3s, transform 0.3s;
         }
 
         .card-content a:hover {
-            color: #1e40af;
+            color: #1E3A8A;  /* Dark blue color on hover */
+            transform: scale(1.1);  /* Slight scale effect on hover */
         }
 
+        /* Footer Styling */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #1f2937;
-            color: #a5a5a5;
+            background-color: #1a202c;  /* Dark gray for footer */
+            color: #f1f5f9;
             margin-top: 40px;
         }
 
         footer a {
-            color: #3b82f6;
+            color: #FBBF24;  /* Yellowish color for footer links */
             text-decoration: none;
         }
 
@@ -136,7 +144,7 @@
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
     </nav>
-
+    
     <main>
         <div class="main-container">
             <!-- Sedan Card -->
