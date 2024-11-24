@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Info Hub</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+            color: #a5a5a5;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #374151;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #1f2937;
+        }
+
+        .card-content a {
+            text-decoration: none;
+            color: #3b82f6;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 5px;
+            transition: color 0.3s;
+        }
+
+        .card-content a:hover {
+            color: #1e40af;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f2937;
+            color: #a5a5a5;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Car Info Hub</h1>
+        <p>Your ultimate guide to all types of cars</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="main-container">
+            <!-- Sedan Card -->
+            <div class="card">
+                <img src="pexels-mikebirdy-100656.jpg" alt="Sedans">
+                <div class="card-content">
+                    <h3>Sedans</h3>
+                    <a href="sedans.html">Explore Sedans</a>
+                </div>
+            </div>
+
+            <!-- SUV Card -->
+            <div class="card">
+                <img src="pexels-mikebirdy-116675.jpg" alt="SUVs">
+                <div class="card-content">
+                    <h3>SUVs</h3>
+                    <a href="suv.html">Explore SUVs</a>
+                </div>
+            </div>
+
+            <!-- Hatchback Card -->
+            <div class="card">
+                <img src="pexels-mikebirdy-810357.jpg" alt="Hatchbacks">
+                <div class="card-content">
+                    <h3>Hatchbacks</h3>
+                    <a href="hatchbacks.html">Explore Hatchbacks</a>
+                </div>
+            </div>
+
+            <!-- Coupe Card -->
+            <div class="card">
+                <img src="pexels-sujasen-17976475.jpg" alt="Coupes">
+                <div class="card-content">
+                    <h3>Coupes</h3>
+                    <a href="coupes.html">Explore Coupes</a>
+                </div>
+            </div>
+
+            <!-- Convertible Card -->
+            <div class="card">
+                <img src="convertible 1.jpg" alt="Convertibles">
+                <div class="card-content">
+                    <h3>Convertibles</h3>
+                    <a href="convertibles.html">Explore Convertibles</a>
+                </div>
+            </div>
+
+            <!-- Truck Card -->
+            <div class="card">
+                <img src="peter-pryharski-kIdryR9_Abo-unsplash.jpg" alt="Trucks">
+                <div class="card-content">
+                    <h3>Trucks</h3>
+                    <a href="trucks.html">Explore Trucks</a>
+                </div>
+            </div>
+
+            <!-- Minivan Card -->
+            <div class="card">
+                <img src="pexels-raymond-petrik-1448389535-27404325.jpg" alt="Minivans">
+                <div class="card-content">
+                    <h3>Minivans</h3>
+                    <a href="minivans.html">Explore Minivans</a>
+                </div>
+            </div>
+
+            <!-- Electric Car Card -->
+            <div class="card">
+                <img src="pexels-zion-10029773.jpg" alt="Electric Cars">
+                <div class="card-content">
+                    <h3>Electric Cars</h3>
+                    <a href="electriccars.html">Explore Electric Cars</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Car Info Hub | All Rights Reserved</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+
+</body>
+</html>
